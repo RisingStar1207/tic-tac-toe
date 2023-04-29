@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Permanent+Marker&family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <section class="main">
+        <nav class="navbar">
+            <div>
+                <h1>Let's Play</h1>
+            </div>
+            <div id="sound-icon">Sound</div>
+        </nav>
+        <div class="turn">
+            <div id="x" class="active">Turn of X</div>
+            <div id="o">Turn of O</div>
+        </div>
+        <div class="gamebox">
+            <div class="game">
+                <div class="box bd-top bd-left"></div>
+                <div class="box bd-top"></div>
+                <div class="box bd-top bd-right"></div>
+                <div class="box bd-left"></div>
+                <div class="box"></div>
+                <div class="box bd-right"></div>
+                <div class="box bd-left bd-bottom"></div>
+                <div class="box bd-bottom"></div>
+                <div class="box bd-bottom bd-right"></div>
+            </div>
+        </div>
+    </section>
+    <div id="win"class="deactivate">
+        <h1></h1>
+        <button class="restart">Restart</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

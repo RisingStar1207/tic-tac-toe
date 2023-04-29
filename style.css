@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:black;
+    min-height:100vh;
+    min-width: 100vw;
+}
+.main{
+    padding:2% 5%;
+}
+.navbar{
+    display:flex;
+    font-family: 'Bruno Ace SC', cursive;
+    color:green;
+}
+.sound-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2rem;
+}
+#sound-icon{
+    margin-left: auto;
+}
+.gamebox{
+    margin-top: 15vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    display:grid;
+    grid-template-rows: repeat(3,10vmax);
+    grid-template-columns: repeat(3,10vmax);
+}
+.box{
+    color:rgb(249, 247, 247);
+    border:3px solid green;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.bd-left{
+    border-left: 0px;
+}
+.bd-top{
+    border-top: 0px;
+}
+.bd-right{
+    border-right: 0px;
+}
+.bd-bottom{
+    border-bottom: 0px;
+}
+.turn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-top: 6vh;
+    font-family: 'Rubik', sans-serif;
+}
+.active{
+    background-color: green;
+}
+#x{
+    border: 2px solid green;
+    border-bottom-left-radius:20px;
+    border-top-left-radius:20px ;
+    font-size: 1.5rem;
+    padding: 2%;
+}
+#o{
+    border: 2px solid green;
+    border-bottom-right-radius:20px;
+    border-top-right-radius:20px ;
+    font-size: 1.5rem;
+    padding: 2%;
+}
+.deactivate{
+    width:0px;
+    visibility: hidden;
+}
+#win{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 100;
+    background-color: rgba(26, 68, 54, 0.584);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+#win h1{
+    margin:5%;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+.restart{
+    background-color: green;
+    border-color: rgb(20, 100, 73);
+    color: white;
+    font-family: 'Bruno Ace SC', cursive;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
